@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import codebasterLogo from "@/assets/codebaster-logo.png";
+import codebasterLogo from "@/assets/codebaster-logo-new.png";
 
 const Header = () => {
   return (

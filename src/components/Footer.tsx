@@ -1,4 +1,4 @@
-import codebasterLogo from "@/assets/codebaster-logo.png";
+import codebasterLogo from "@/assets/codebaster-logo-new.png";
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
             <img 
               src={codebasterLogo} 
               alt="CodeBaster Solutions Logo" 
-              className="h-12 w-auto filter brightness-0 invert"
+              className="h-12 w-auto"
             />
             <p className="text-primary-foreground/80">
               Empowering local talent to create world-class digital solutions.
