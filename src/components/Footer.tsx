@@ -1,15 +1,16 @@
+import codebasterLogo from "@/assets/codebaster-logo.png";
+
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground py-12">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
-                <span className="text-primary font-bold text-lg">CB</span>
-              </div>
-              <span className="text-xl font-bold">CodeBaster Solutions</span>
-            </div>
+            <img 
+              src={codebasterLogo} 
+              alt="CodeBaster Solutions Logo" 
+              className="h-12 w-auto filter brightness-0 invert"
+            />
             <p className="text-primary-foreground/80">
               Empowering local talent to create world-class digital solutions.
             </p>
