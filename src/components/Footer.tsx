@@ -1,4 +1,5 @@
 import codebasterLogo from "@/assets/codebaster-logo-new.png";
+import { Instagram, Facebook, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -39,10 +40,21 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Connect</h4>
             <ul className="space-y-2 text-primary-foreground/80">
-              <li>hello@codebastersolutions.com</li>
-              <li>+91 12345 67890</li>
+              <li>codebastarsolutions@gmail.com</li>
+              <li>+91 6268409259</li>
               <li>Dantewada, Chhattisgarh</li>
             </ul>
+            <div className="flex space-x-4 mt-4">
+              <a href="https://instagram.com/codebastarsolutins0" className="hover:text-white transition-smooth">
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a href="#" className="hover:text-white transition-smooth">
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a href="#" className="hover:text-white transition-smooth">
+                <Linkedin className="w-5 h-5" />
+              </a>
+            </div>
           </div>
         </div>
         
