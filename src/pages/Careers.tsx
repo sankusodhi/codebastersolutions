@@ -130,20 +130,36 @@ const Careers = () => {
         <section className="py-20 bg-gradient-subtle">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold mb-4">Open Positions</h2>
+              <div className="flex items-center justify-center gap-2 mb-4">
+                <h2 className="text-3xl font-bold">Open Positions</h2>
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm bg-green-100 text-green-800 px-2 py-1 rounded-full font-medium">
+                    Live Hiring
+                  </span>
+                </div>
+              </div>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Explore our current job openings and find the perfect role for your skills and career goals.
+                🔥 We're actively hiring! Apply now for immediate consideration and fast-track interviews.
               </p>
             </div>
             
             <div className="grid lg:grid-cols-2 gap-8">
               {jobs.map((job) => (
-                <Card key={job.id} className="hover:shadow-lg transition-all duration-300">
+                <Card key={job.id} className="hover:shadow-lg transition-all duration-300 relative">
+                  <div className="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full animate-bounce">
+                    🔥 URGENT
+                  </div>
                   <CardHeader>
                     <div className="flex items-start justify-between mb-2">
                       <div>
                         <CardTitle className="text-xl mb-2">{job.title}</CardTitle>
-                        <Badge variant="secondary">{job.department}</Badge>
+                        <div className="flex gap-2">
+                          <Badge variant="secondary">{job.department}</Badge>
+                          <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                            ⚡ Fast Hiring
+                          </Badge>
+                        </div>
                       </div>
                     </div>
                     <CardDescription className="text-base">{job.description}</CardDescription>

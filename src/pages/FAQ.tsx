@@ -133,7 +133,27 @@ const FAQ = () => {
               </p>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              <Card className="text-center hover:shadow-lg transition-all duration-300">
+                <CardHeader>
+                  <div className="bg-green-500/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <MessageCircle className="w-8 h-8 text-green-500" />
+                  </div>
+                  <CardTitle>WhatsApp Chat</CardTitle>
+                  <CardDescription>
+                    Connect instantly via WhatsApp
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Button 
+                    className="w-full bg-green-500 hover:bg-green-600"
+                    onClick={() => window.open('https://wa.me/916268409259', '_blank')}
+                  >
+                    Chat on WhatsApp
+                  </Button>
+                </CardContent>
+              </Card>
+
               <Card className="text-center hover:shadow-lg transition-all duration-300">
                 <CardHeader>
                   <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -158,11 +178,15 @@ const FAQ = () => {
                   </div>
                   <CardTitle>Email Support</CardTitle>
                   <CardDescription>
-                    Send us an email and we'll respond within 24 hours
+                    codebastarsolutions@gmail.com
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button variant="outline" className="w-full">
+                  <Button 
+                    variant="outline" 
+                    className="w-full"
+                    onClick={() => window.open('mailto:codebastarsolutions@gmail.com', '_blank')}
+                  >
                     Send Email
                   </Button>
                 </CardContent>
@@ -175,11 +199,15 @@ const FAQ = () => {
                   </div>
                   <CardTitle>Phone Support</CardTitle>
                   <CardDescription>
-                    Call us during business hours for immediate assistance
+                    +91 6268409259
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button variant="outline" className="w-full">
+                  <Button 
+                    variant="outline" 
+                    className="w-full"
+                    onClick={() => window.open('tel:+916268409259', '_blank')}
+                  >
                     Call Now
                   </Button>
                 </CardContent>
