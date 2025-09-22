@@ -9,6 +9,7 @@ import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Contact from "@/components/Contact";
+import Feedback from "@/components/Feedback";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -25,6 +26,7 @@ const Index = () => {
       <Testimonials />
       <WhyChooseUs />
       <Contact />
+      <Feedback />
       <Footer />
     </div>
   );
