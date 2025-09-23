@@ -43,8 +43,15 @@ const Contact = () => {
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <p className="font-semibold">Call Us</p>
-                  <p className="text-muted-foreground">+91 6268409259</p>
+                  <p className="font-semibold">WhatsApp Us</p>
+                  <a 
+                    href="https://wa.me/916268409259" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline"
+                  >
+                    +91 6268409259
+                  </a>
                 </div>
               </div>
               

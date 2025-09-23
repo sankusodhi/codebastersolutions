@@ -40,8 +40,21 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Connect</h4>
             <ul className="space-y-2 text-primary-foreground/80">
-              <li>codebastarsolutions@gmail.com</li>
-              <li>+91 6268409259</li>
+              <li>
+                <a href="mailto:codebastarsolutions@gmail.com" className="hover:text-white transition-smooth">
+                  codebastarsolutions@gmail.com
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://wa.me/916268409259" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-smooth"
+                >
+                  +91 6268409259
+                </a>
+              </li>
               <li>Dantewada, Chhattisgarh</li>
             </ul>
             <div className="flex space-x-4 mt-4">
